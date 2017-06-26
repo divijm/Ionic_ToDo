@@ -3,12 +3,22 @@
     <ion-title>
       TO-DO-YOU
     </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addTodo">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+     
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+
+  <ion-list>
+    <button ion-item (click)="editToDo(todo)" *ngFor="let todo of todos">
+      {{todo.title}}
+    </button>
+  </ion-list>
+
 </ion-content>

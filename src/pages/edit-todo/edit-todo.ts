@@ -18,11 +18,15 @@ export class EditTodoPage {
   }
 
   ionViewDidLoad() {
+    let todo = this.navParams.get('todo')
 
+    if(typeof(todo) !== "undefined") {
+      this.todo = todo 
+    }
   }
 
   save() {
-    
+    this.navCtrl.pop()
   }
 
 }

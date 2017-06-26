@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { EditTodoPage } from '../edit-todo/edit-todo'
 
 @Component({
   selector: 'page-home',
@@ -24,10 +25,12 @@ export class HomePage {
   }
 
   addToDo() {
-    console.log('TODO: Finish add todo')
+    this.navCtrl.push(EditTodoPage)
   }
 
-  editTodo(todo) {
-    console.log('TODO: Finish edit todo')
+  editToDo(todo) {
+    this.navCtrl.push(EditTodoPage, {
+      todo: todo 
+    })
   }
 }
