@@ -5,7 +5,7 @@
     </ion-title>
 
     <ion-buttons end>
-      <button ion-button icon-only (click)="addTodo">
+      <button ion-button icon-only (click)="addTodo()">
         <ion-icon name="add"></ion-icon>
       </button>
     </ion-buttons>
@@ -16,7 +16,7 @@
 <ion-content>
 
   <ion-list>
-    <button ion-item (click)="editToDo(todo)" *ngFor="let todo of todos">
+    <button ion-item (click)="editTodo(todo)" *ngFor="let todo of dataService.todos">
       {{todo.title}}
     </button>
   </ion-list>
