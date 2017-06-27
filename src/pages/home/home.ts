@@ -22,7 +22,7 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
-    this.dataService.load()
+    this.dataService.load();
   }
 
   addTodo() {

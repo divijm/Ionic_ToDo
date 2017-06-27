@@ -1,3 +1,14 @@
-page-home {
+.ios, .md {
+
+    page-home {
+        ion-list button {
+            background-color: white;
+            width: 96%;
+            margin: 2%;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
 
 }
+

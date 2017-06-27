@@ -27,8 +27,8 @@ export class EditTodoPage {
   }
 
   save() {
-    this.dataService.save(this.todo)
-    this.navCtrl.pop()
+    this.dataService.save(this.todo);
+    this.navCtrl.pop();
   }
 
 }

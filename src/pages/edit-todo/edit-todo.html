@@ -1,7 +1,7 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Edit ToDo</ion-title>
+  <ion-navbar color="top-bg">
+    <ion-title>Edit Todo</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -11,19 +11,22 @@
 
   <ion-list>
 
-  <ion-item>
-    <ion-label floating>Title</ion-label>
-    <ion-input [(ngModel)]="todo.title" type="text"></ion-input>
-  </ion-item>
+    <ion-item>
+      <ion-label floating>Title</ion-label>
+      <ion-input [(ngModel)]="todo.title" type="text"></ion-input>
+    </ion-item>
 
-  <ion-item>
-    <ion-label floating>Description</ion-label>
-    <ion-input [(ngModel)]="todo.description" type="text"></ion-input>
-  </ion-item>
+    <ion-item>
+      <ion-label floating>Description</ion-label>
+      <ion-input [(ngModel)]="todo.description" type="text"></ion-input>
+    </ion-item>
 
-</ion-list>
-
-<button ion-button full (click)="save()">Save</button>
-
+  </ion-list> 
 
 </ion-content>
+
+<ion-footer>
+
+  <button color="button-pink" ion-button full (click)="save()">Save</button>
+
+</ion-footer>
